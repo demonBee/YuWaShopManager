@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YWBankViewController">
+            <connections>
+                <outlet property="nameLabel" destination="7lW-y9-kbT" id="tsu-sP-9z3"/>
+                <outlet property="tableView" destination="0jW-yb-ZEx" id="8Hu-Ae-h5l"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5C-Hk-Msd">
+                    <rect key="frame" x="0.0" y="64" width="600" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="如需要修改银行卡信息,请您联系" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lW-y9-kbT">
+                            <rect key="frame" x="10" y="0.0" width="580" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.95294117647058818" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="7lW-y9-kbT" secondAttribute="trailing" constant="10" id="8xk-fH-3jW"/>
+                        <constraint firstAttribute="height" constant="40" id="97O-b9-pYQ"/>
+                        <constraint firstItem="7lW-y9-kbT" firstAttribute="top" secondItem="P5C-Hk-Msd" secondAttribute="top" id="BUy-CA-Ubo"/>
+                        <constraint firstAttribute="bottom" secondItem="7lW-y9-kbT" secondAttribute="bottom" id="b7k-9O-RnC"/>
+                        <constraint firstItem="7lW-y9-kbT" firstAttribute="leading" secondItem="P5C-Hk-Msd" secondAttribute="leading" constant="10" id="bZA-7i-XtZ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0jW-yb-ZEx">
+                    <rect key="frame" x="0.0" y="104" width="600" height="496"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="26V-NT-xBV"/>
+                        <outlet property="delegate" destination="-1" id="L3x-g6-55v"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0jW-yb-ZEx" secondAttribute="trailing" id="ExP-9T-Iwl"/>
+                <constraint firstItem="0jW-yb-ZEx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QqL-rN-afJ"/>
+                <constraint firstItem="0jW-yb-ZEx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="108" id="atn-hV-gxl"/>
+                <constraint firstItem="0jW-yb-ZEx" firstAttribute="top" secondItem="P5C-Hk-Msd" secondAttribute="bottom" id="frQ-XE-4Xo"/>
+                <constraint firstItem="P5C-Hk-Msd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="jRJ-32-4f3"/>
+                <constraint firstItem="P5C-Hk-Msd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nKD-GK-CGR"/>
+                <constraint firstAttribute="bottom" secondItem="0jW-yb-ZEx" secondAttribute="bottom" id="qlA-lj-KMZ"/>
+                <constraint firstItem="0jW-yb-ZEx" firstAttribute="top" secondItem="P5C-Hk-Msd" secondAttribute="bottom" id="uNZ-C7-K6F"/>
+                <constraint firstAttribute="trailing" secondItem="P5C-Hk-Msd" secondAttribute="trailing" id="uxr-35-oyb"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="atn-hV-gxl"/>
+                    <exclude reference="frQ-XE-4Xo"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

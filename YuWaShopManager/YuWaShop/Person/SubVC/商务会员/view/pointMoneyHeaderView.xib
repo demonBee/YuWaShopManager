@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="pointMoneyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普通会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMy-2E-h5e">
+                    <rect key="frame" x="15" y="65" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前兑换比例1：20" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21h-QG-LbK">
+                    <rect key="frame" x="236" y="65" width="124" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZI-en-2Dh">
+                    <rect key="frame" x="15" y="261" width="112" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="历史总积分：200"/>
+                </button>
+                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnK-hR-xPs">
+                    <rect key="frame" x="250" y="261" width="110" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="待结算积分：100"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前积分：62" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7H-LP-ntz">
+                    <rect key="frame" x="116" y="136" width="144" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGm-gC-XMl">
+                    <rect key="frame" x="113" y="179" width="150" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="ZBk-Ae-984"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="提现"/>
+                </button>
+                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pX-4z-fhB">
+                    <rect key="frame" x="113" y="227" width="150" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="2sv-AS-ubL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="查看积分详情"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.23012551665306091" green="0.73476451635360718" blue="0.91849935054779053" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0pX-4z-fhB" firstAttribute="top" secondItem="dGm-gC-XMl" secondAttribute="bottom" constant="15" id="2hf-it-Ren"/>
+                <constraint firstItem="dGm-gC-XMl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="66n-UF-aqX"/>
+                <constraint firstItem="xZI-en-2Dh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="73h-BI-PXx"/>
+                <constraint firstItem="q7H-LP-ntz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8AX-i0-crj"/>
+                <constraint firstAttribute="trailing" secondItem="21h-QG-LbK" secondAttribute="trailing" constant="15" id="AzX-7F-b6n"/>
+                <constraint firstItem="eMy-2E-h5e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="DDE-tO-JJq"/>
+                <constraint firstItem="0pX-4z-fhB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VFp-OK-Eqk"/>
+                <constraint firstItem="eMy-2E-h5e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="XWG-wL-ScZ"/>
+                <constraint firstItem="q7H-LP-ntz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cSc-HN-mki"/>
+                <constraint firstAttribute="bottom" secondItem="xZI-en-2Dh" secondAttribute="bottom" constant="10" id="cmk-WE-41r"/>
+                <constraint firstItem="dGm-gC-XMl" firstAttribute="top" secondItem="q7H-LP-ntz" secondAttribute="bottom" constant="15" id="fTR-Y4-FID"/>
+                <constraint firstAttribute="bottom" secondItem="dnK-hR-xPs" secondAttribute="bottom" constant="10" id="hxg-k7-TOl"/>
+                <constraint firstAttribute="trailing" secondItem="dnK-hR-xPs" secondAttribute="trailing" constant="15" id="kPA-vc-3BO"/>
+                <constraint firstItem="21h-QG-LbK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="65" id="n4A-gZ-jpX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-37" y="-271"/>
+        </view>
+    </objects>
+</document>
